@@ -15,6 +15,11 @@
 		A230F79D27078E0C00B0E088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A230F79B27078E0C00B0E088 /* LaunchScreen.storyboard */; };
 		A230F7A827078E0C00B0E088 /* ecoDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A230F7A727078E0C00B0E088 /* ecoDoTests.swift */; };
 		A230F7B327078E0C00B0E088 /* ecoDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A230F7B227078E0C00B0E088 /* ecoDoUITests.swift */; };
+		A2777A9D271A035D0077EAE5 /* LoginSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2777A9C271A035D0077EAE5 /* LoginSceneViewController.swift */; };
+		A2777AA3271A09520077EAE5 /* LoginSceneAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2777AA2271A09520077EAE5 /* LoginSceneAssembly.swift */; };
+		A2777AA8271A0B450077EAE5 /* LoginSceneDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2777AA7271A0B450077EAE5 /* LoginSceneDisplayLogic.swift */; };
+		A2777AAC271A0BAE0077EAE5 /* LoginSceneRoutingLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2777AAA271A0BAE0077EAE5 /* LoginSceneRoutingLogic.swift */; };
+		A2777AAD271A0BAE0077EAE5 /* LoginSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2777AAB271A0BAE0077EAE5 /* LoginSceneRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		A230F7AE27078E0C00B0E088 /* ecoDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ecoDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A230F7B227078E0C00B0E088 /* ecoDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecoDoUITests.swift; sourceTree = "<group>"; };
 		A230F7B427078E0C00B0E088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2777A9C271A035D0077EAE5 /* LoginSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneViewController.swift; sourceTree = "<group>"; };
+		A2777AA2271A09520077EAE5 /* LoginSceneAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSceneAssembly.swift; sourceTree = "<group>"; };
+		A2777AA7271A0B450077EAE5 /* LoginSceneDisplayLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSceneDisplayLogic.swift; sourceTree = "<group>"; };
+		A2777AAA271A0BAE0077EAE5 /* LoginSceneRoutingLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSceneRoutingLogic.swift; sourceTree = "<group>"; };
+		A2777AAB271A0BAE0077EAE5 /* LoginSceneRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSceneRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		A230F78F27078E0A00B0E088 /* ecoDo */ = {
 			isa = PBXGroup;
 			children = (
+				A2777A9A271A033C0077EAE5 /* Scenes */,
 				A230F79027078E0A00B0E088 /* AppDelegate.swift */,
 				A230F79227078E0A00B0E088 /* SceneDelegate.swift */,
 				A230F79427078E0A00B0E088 /* ViewController.swift */,
@@ -126,6 +137,50 @@
 				A230F7B427078E0C00B0E088 /* Info.plist */,
 			);
 			path = ecoDoUITests;
+			sourceTree = "<group>";
+		};
+		A2777A9A271A033C0077EAE5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A2777A9B271A03440077EAE5 /* LoginScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A2777A9B271A03440077EAE5 /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				A2777AA9271A0B940077EAE5 /* Router */,
+				A2777AA6271A0A890077EAE5 /* View */,
+				A2777AA4271A0A420077EAE5 /* Assembly */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		A2777AA4271A0A420077EAE5 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A2777AA2271A09520077EAE5 /* LoginSceneAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		A2777AA6271A0A890077EAE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2777AA7271A0B450077EAE5 /* LoginSceneDisplayLogic.swift */,
+				A2777A9C271A035D0077EAE5 /* LoginSceneViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2777AA9271A0B940077EAE5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A2777AAB271A0BAE0077EAE5 /* LoginSceneRouter.swift */,
+				A2777AAA271A0BAE0077EAE5 /* LoginSceneRoutingLogic.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2777AAD271A0BAE0077EAE5 /* LoginSceneRouter.swift in Sources */,
+				A2777AA3271A09520077EAE5 /* LoginSceneAssembly.swift in Sources */,
 				A230F79527078E0A00B0E088 /* ViewController.swift in Sources */,
+				A2777AAC271A0BAE0077EAE5 /* LoginSceneRoutingLogic.swift in Sources */,
 				A230F79127078E0A00B0E088 /* AppDelegate.swift in Sources */,
+				A2777AA8271A0B450077EAE5 /* LoginSceneDisplayLogic.swift in Sources */,
 				A230F79327078E0A00B0E088 /* SceneDelegate.swift in Sources */,
+				A2777A9D271A035D0077EAE5 /* LoginSceneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
